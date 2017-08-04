@@ -1,0 +1,40 @@
+
+.logo{
+	background: url(images/logo.png) no-repeat center;
+	width:292px;
+	height: 277px;
+	
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -200px;
+}
+
+.ladding{
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 350px;
+
+}
+
+.ladding .progress{
+	width:0px;
+	height: 3px;
+	background: #7f7f7f;
+	
+	transition: width 0.5s ease-out;
+	-moz-transition: width 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition: width 0.5s ease-out; /* Safari 和 Chrome */
+	-o-transition: width 0.5s ease-out; /* Opera */		
+}
+
+
+a.enter{
+	display: none;
+	color: #fff;
+	
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+	top: 50px;
+}

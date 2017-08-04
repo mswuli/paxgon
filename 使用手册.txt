@@ -1,0 +1,30 @@
+﻿一、HOME 页面改换图片方法
+
+   点击css文件夹 → images → who → (back0.jpg-back5.jpg 可任意改变图片注意图片名称不要改变),按0-5的顺序进行播放
+二、增加/删除CLIENT 方法， 增加VIDEO 方法， 替换图片，VIDEO 方法
+     1、增加client  
+		Paxgon\resource\what\clients → 创建需要添加的文件夹以及文件夹
+		Paxgon\js\resource.js(56行处增加需要client图标的地址)
+		Paxgon\resource\what\left.html(16行数组[]里增加新增client的名字)
+
+
+     2、删除client
+                Paxgon\resource\what\clients → 删除需要删除的client文件夹
+		Paxgon\js\resource.js(删除需要删除client图标的地址)
+		Paxgon\resource\what\left.html(16行数组[]里删除需要删除的client的名字)
+         
+     3、增加video方法
+                Paxgon\resource\what\clients 找到对应需要增加的文件夹 → 点击index.html文件
+                在 <ul class="imglist">  <ul> 中添加 <li><img src="resource/what/clients/对应文件夹名字/video.jpg"/></li>
+                注意: video图片名字必须为 video.jpg  video名字必须为video.mp4
+
+     4、删除video方法
+		Paxgon\resource\what\clients 找到对应需要增加的文件夹 → 点击index.html文件 
+		 在 <ul class="imglist">  <ul> 中找到带有 <li><img src="resource/what/clients/对应文件夹名字/video.jpg"/></li> 的一行删除掉
+
+    5、更改client图片
+               Paxgon\resource\what\clients 找到对应需要增加的文件夹处添加需要显示的图片 (注意名称必须为p0开头)0代表第一个要显示的图片
+
+三、改变paxmail左侧内容
+
+     Paxgon\resource\paxmail\content.html文件根据提示编辑需要改变的内容
